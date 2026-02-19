@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 1000" width="2400" height="3000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;display=swap');
+    </style>
+    
+    <!-- Desaturated pale olive-green/beige for text and moon -->
+    <linearGradient id="paleBeige" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b89a"/>
+      <stop offset="30%" style="stop-color:#b5aa8c"/>
+      <stop offset="50%" style="stop-color:#a69e7e"/>
+      <stop offset="70%" style="stop-color:#958a70"/>
+      <stop offset="100%" style="stop-color:#7a6e5a"/>
+    </linearGradient>
+    
+    <!-- Moon with subtle volume -->
+    <linearGradient id="moonShineDesat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d8cdb0"/>
+      <stop offset="40%" style="stop-color:#b5aa8c"/>
+      <stop offset="100%" style="stop-color:#8a7f65"/>
+    </linearGradient>
+    
+    <!-- Deeper muted olive for leaves -->
+    <linearGradient id="sageLeafDesat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7a8b6c"/>
+      <stop offset="50%" style="stop-color:#5c6d4e"/>
+      <stop offset="100%" style="stop-color:#4a5b3d"/>
+    </linearGradient>
+    
+    <!-- Desaturated flowers - pale yellowish-beige -->
+    <linearGradient id="blushFlowerDesat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b89a"/>
+      <stop offset="50%" style="stop-color:#b0a68a"/>
+      <stop offset="100%" style="stop-color:#9a9078"/>
+    </linearGradient>
+    
+    <!-- Star color - muted cream -->
+    <radialGradient id="starGlowDesat">
+      <stop offset="0%" style="stop-color:#e0d8c8"/>
+      <stop offset="100%" style="stop-color:#b5aa8c"/>
+    </radialGradient>
+    
+    <!-- Filter for subtle shadow on text -->
+    <filter id="textShadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Black background -->
+  <rect width="800" height="1000" fill="#000000"/>
+  
+  <!-- Main group centered -->
+  <g transform="translate(400, 500)">
+    
+    <!-- Stars and sparkles - muted gold/cream -->
+    <g fill="#c4b89a" opacity="0.9">
+      <polygon points="0,-380 2,-376 0,-372 -2,-376" transform="scale(1.5)"/>
+      <polygon points="0,0 3,-2 0,3 -3,-2" transform="translate(-320,-280) scale(0.8)"/>
+      <polygon points="0,0 3,-2 0,3 -3,-2" transform="translate(310,-270) scale(0.6)"/>
+      <polygon points="0,0 2,-2 0,2 -2,-2" transform="translate(-280,280) scale(0.5)"/>
+      <polygon points="0,0 2,-2 0,2 -2,-2" transform="translate(290,290) scale(0.7)"/>
+      <circle r="1.5" transform="translate(-350,-200)"/>
+      <circle r="1" transform="translate(340,-180)"/>
+      <circle r="1.2" transform="translate(-330,220)"/>
+      <circle r="1.5" transform="translate(320,200)"/>
+      <circle r="1" transform="translate(-250,-320)"/>
+      <circle r="1" transform="translate(260,-310)"/>
+      <circle r="1.2" transform="translate(-180,320)"/>
+      <circle r="1" transform="translate(190,330)"/>
+      <circle r="1" transform="translate(0,-340)"/>
+      <circle r="1.5" transform="translate(-80,-300)"/>
+      <circle r="1" transform="translate(90,-290)"/>
+      <circle r="1" transform="translate(-100,300)"/>
+      <circle r="1.2" transform="translate(100,310)"/>
+      <circle r="1" transform="translate(-150,-250)"/>
+      <circle r="1" transform="translate(160,-240)"/>
+    </g>
+    
+    <!-- Crescent Moon (left-facing) -->
+    <g transform="translate(0, -320)">
+      <mask id="crescentMask">
+        <circle cx="0" cy="0" r="35" fill="white"/>
+        <circle cx="-12" cy="0" r="28" fill="black"/>
+      </mask>
+      <circle cx="0" cy="0" r="35" fill="url(#moonShineDesat)" mask="url(#crescentMask)"/>
+    </g>
+    
+    <!-- Floral Wreath - Left branch -->
+    <g stroke="none" fill="url(#sageLeafDesat)">
+      <ellipse cx="-180" cy="-180" rx="25" ry="8" transform="rotate(-60 -180 -180)"/>
+      <ellipse cx="-160" cy="-150" rx="22" ry="7" transform="rotate(-45 -160 -150)"/>
+      <ellipse cx="-145" cy="-120" rx="20" ry="6" transform="rotate(-30 -145 -120)"/>
+      <ellipse cx="-130" cy="-90" rx="18" ry="6" transform="rotate(-20 -130 -90)"/>
+      <ellipse cx="-120" cy="-60" rx="16" ry="5" transform="rotate(-10 -120 -60)"/>
+      <ellipse cx="-115" cy="-30" rx="14" ry="5" transform="rotate(0 -115 -30)"/>
+      <ellipse cx="-115" cy="0" rx="12" ry="4" transform="rotate(5 -115 0)"/>
+      <ellipse cx="-120" cy="30" rx="14" ry="5" transform="rotate(10 -120 30)"/>
+      <ellipse cx="-130" cy="60" rx="16" ry="6" transform="rotate(15 -130 60)"/>
+      <ellipse cx="-145" cy="90" rx="18" ry="6" transform="rotate(20 -145 90)"/>
+      <ellipse cx="-165" cy="130" rx="20" ry="7" transform="rotate(25 -165 130)"/>
+      <ellipse cx="-190" cy="170" rx="22" ry="8" transform="rotate(30 -190 170)"/>
+      <ellipse cx="-210" cy="210" rx="24" ry="8" transform="rotate(35 -210 210)"/>
+      <ellipse cx="-230" cy="250" rx="26" ry="9" transform="rotate(40 -230 250)"/>
+    </g>
+    
+    <!-- Floral Wreath - Right branch -->
+    <g stroke="none" fill="url(#sageLeafDesat)">
+      <ellipse cx="180" cy="-180" rx="25" ry="8" transform="rotate(60 180 -180)"/>
+      <ellipse cx="160" cy="-150" rx="22" ry="7" transform="rotate(45 160 -150)"/>
+      <ellipse cx="145" cy="-120" rx="20" ry="6" transform="rotate(30 145 -120)"/>
+      <ellipse cx="130" cy="-90" rx="18" ry="6" transform="rotate(20 130 -90)"/>
+      <ellipse cx="120" cy="-60" rx="16" ry="5" transform="rotate(10 120 -60)"/>
+      <ellipse cx="115" cy="-30" rx="14" ry="5" transform="rotate(0 115 -30)"/>
+      <ellipse cx="115" cy="0" rx="12" ry="4" transform="rotate(-5 115 0)"/>
+      <ellipse cx="120" cy="30" rx="14" ry="5" transform="rotate(-10 120 30)"/>
+      <ellipse cx="130" cy="60" rx="16" ry="6" transform="rotate(-15 130 60)"/>
+      <ellipse cx="145" cy="90" rx="18" ry="6" transform="rotate(-20 145 90)"/>
+      <ellipse cx="165" cy="130" rx="20" ry="7" transform="rotate(-25 165 130)"/>
+      <ellipse cx="190" cy="170" rx="22" ry="8" transform="rotate(-30 190 170)"/>
+      <ellipse cx="210" cy="210" rx="24" ry="8" transform="rotate(-35 210 210)"/>
+      <ellipse cx="230" cy="250" rx="26" ry="9" transform="rotate(-40 230 250)"/>
+    </g>
+    
+    <!-- Small flowers in wreath -->
+    <g fill="url(#blushFlowerDesat)">
+      <circle cx="-140" cy="-100" r="8"/>
+      <circle cx="-100" cy="20" r="6"/>
+      <circle cx="-170" cy="150" r="7"/>
+      <circle cx="140" cy="-100" r="8"/>
+      <circle cx="100" cy="20" r="6"/>
+      <circle cx="170" cy="150" r="7"/>
+      <g opacity="0.9">
+        <ellipse cx="-140" cy="-103" rx="4" ry="6" transform="rotate(-30 -140 -103)"/>
+        <ellipse cx="-137" cy="-100" rx="4" ry="6" transform="rotate(30 -137 -100)"/>
+        <ellipse cx="-140" cy="-97" rx="4" ry="6" transform="rotate(90 -140 -97)"/>
+        <ellipse cx="-100" cy="17" rx="3" ry="5" transform="rotate(-20 -100 17)"/>
+        <ellipse cx="-98" cy="20" rx="3" ry="5" transform="rotate(40 -98 20)"/>
+      </g>
+    </g>
+    
+    <!-- Bottom decorative swirls -->
+    <path d="M -40 280 Q 0 260 40 280" stroke="url(#paleBeige)" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M -50 295 Q 0 275 50 295" stroke="url(#sageLeafDesat)" stroke-width="1.5" fill="none" opacity="0.7"/>
+    
+    <!-- Stars between text -->
+    <g fill="#c4b89a" opacity="0.85">
+      <polygon points="0,0 2,-2 0,2 -2,-2" transform="translate(-100,-150) scale(1.2)"/>
+      <polygon points="0,0 2,-2 0,2 -2,-2" transform="translate(95,-145) scale(1)"/>
+      <polygon points="0,0 2,-2 0,2 -2,-2" transform="translate(-80,130) scale(0.8)"/>
+      <polygon points="0,0 2,-2 0,2 -2,-2" transform="translate(85,135) scale(0.9)"/>
+    </g>
+    
+    <!-- Main Text: First Light -->
+    <g filter="url(#textShadow)">
+      <text x="0" y="-80" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="72" font-weight="600" fill="url(#paleBeige)">First</text>
+      <text x="0" y="40" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="96" font-weight="600" fill="url(#paleBeige)">Light</text>
+    </g>
+  </g>
+</svg>

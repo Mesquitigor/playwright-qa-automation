@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Light - Export em Alta Resolução</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: system-ui, sans-serif;
+      padding: 2rem;
+    }
+    h1 { margin-bottom: 1.5rem; font-size: 1.5rem; }
+    .controls {
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .controls label { display: flex; align-items: center; gap: 0.5rem; }
+    .controls select {
+      padding: 0.5rem 1rem;
+      background: #333;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 4px;
+    }
+    .export-btn {
+      padding: 0.75rem 1.5rem;
+      background: #4a7c59;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .export-btn:hover { background: #5a8c69; }
+    .preview {
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      display: inline-block;
+      max-width: 100%;
+    }
+    .preview img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .size-info {
+      margin-top: 1rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>First Light - Réplicas em Alta Qualidade</h1>
+  <p style="margin-bottom: 1.5rem; color: #aaa;">
+    Selecione a imagem e o tamanho desejado. Use o botão direito → "Salvar imagem como" para exportar em PNG, 
+    ou use a ferramenta de captura de tela do seu sistema para tamanhos maiores.
+  </p>
+  
+  <div class="controls">
+    <label>
+      Imagem:
+      <select id="imageSelect">
+        <option value="first-light-logo.svg">Versão Rose Gold (original)</option>
+        <option value="first-light-logo-desaturated.svg">Versão Desaturada (olive/beige)</option>
+      </select>
+    </label>
+    <label>
+      Tamanho de exibição:
+      <select id="sizeSelect">
+        <option value="800">800 × 1000 px</option>
+        <option value="1200">1200 × 1500 px</option>
+        <option value="1600">1600 × 2000 px</option>
+        <option value="2400" selected>2400 × 3000 px (Alta resolução)</option>
+        <option value="3200">3200 × 4000 px (Máxima qualidade)</option>
+      </select>
+    </label>
+    <button class="export-btn" onclick="downloadPNG()">Exportar como PNG</button>
+  </div>
+  
+  <div class="preview">
+    <img id="previewImg" src="first-light-logo.svg" alt="First Light Logo">
+  </div>
+  <div class="size-info" id="sizeInfo">2400 × 3000 pixels</div>
+
+  <script>
+    const img = document.getElementById('previewImg');
+    const imageSelect = document.getElementById('imageSelect');
+    const sizeSelect = document.getElementById('sizeSelect');
+    const sizeInfo = document.getElementById('sizeInfo');
+
+    function updatePreview() {
+      const image = imageSelect.value;
+      const size = parseInt(sizeSelect.value);
+      img.src = image + '?t=' + Date.now();
+      img.width = size;
+      img.height = size * 1.25; // 800:1000 ratio
+      sizeInfo.textContent = `${size} × ${size * 1.25} pixels`;
+    }
+
+    imageSelect.onchange = updatePreview;
+    sizeSelect.onchange = updatePreview;
+
+    function downloadPNG() {
+      const size = parseInt(sizeSelect.value);
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size * 1.25;
+      const ctx = canvas.getContext('2d');
+      
+      const imgEl = new Image();
+      imgEl.crossOrigin = 'anonymous';
+      imgEl.onload = () => {
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(imgEl, 0, 0, canvas.width, canvas.height);
+        
+        const link = document.createElement('a');
+        const baseName = imageSelect.value.replace('.svg', '');
+        link.download = `${baseName}-${size}x${size*1.25}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      };
+      imgEl.src = imageSelect.value;
+    }
+
+    updatePreview();
+  </script>
+</body>
+</html>
