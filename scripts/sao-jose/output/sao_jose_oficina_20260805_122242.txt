@@ -1,0 +1,35 @@
+        # Prompt — São José (gerado em 2026-08-05T12:22:42.306152)
+
+        ## Prompt positivo
+        Uma pintura sacra em estilo renascentista contemporâneo, atmosfera reverente e calorosa.
+
+CENA: Oficina de carpinteiro em Nazaré, século I. Um homem robusto e trabalhador — São José —
+visto de costas ou em três quartos, rosto oculto pela sombra ou pelo ângulo. Mãos largas,
+calejadas e fortes seguram um cinzel e um pedaço de madeira de oliveira. O corpo transmite
+força serena, disciplina e proteção paterna.
+
+ELEMENTOS SIMBÓLICOS:
+- Ferramentas de carpinteiro: serra, plaina, martelo, esquadro de madeira
+- Lascas de madeira e serragem no chão de pedra
+- Um pequeno banco de madeira infantil ao fundo (sugestão de presença do Menino)
+- Sandálias pequenas de couro penduradas na parede
+- Um lírio branco em vaso de barro (pureza e obediência)
+- Luz dourada entrando por janela baixa, como luz divina suave
+- Túnica simples de linho e avental de couro gasto pelo trabalho
+- Braços musculosos mas não exagerados — força de quem trabalha com dignidade
+
+ATMOSFERA: masculinidade viril sem agressividade; paternidade protetora; silêncio operoso;
+santidade encontrada no trabalho honesto. Nenhum rosto humano claramente visível.
+Não mostrar o rosto de Jesus nem de Maria — apenas sugestões indiretas da família.
+
+ESTILO: óleo sobre tela, pinceladas visíveis, paleta terrosa (ocre, sépia, dourado, verde-oliva),
+iluminação chiaroscuro suave. Composição vertical, adequada para devoção.
+
+VARIAÇÃO — O Trabalhador de Nazaré:
+Foco nas mãos de São José entalhando madeira. Gotas de suor na testa oculta. Pó de serragem flutuando na luz.
+
+        ## Prompt negativo
+        rosto visível, face detalhada, retrato frontal, caricatura, cartoon, anime,
+violência, sangue, armas, sensualidade, nudez, feminização, corpo frágil,
+modernidade, eletricidade, máquinas industriais, texto, watermark, assinatura,
+baixa qualidade, borrado, distorção, membros extras, anatomia incorreta
