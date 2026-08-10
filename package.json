@@ -2,7 +2,10 @@
   "name": "deeporigin",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "analyze:tools": "node scripts/analyze-tool-viability.mjs",
+    "analyze:tools:benchmark": "node scripts/analyze-tool-viability.mjs --benchmark --run-tests"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
