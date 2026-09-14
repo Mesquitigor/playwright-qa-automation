@@ -1,4 +1,8 @@
 
+# Python
+__pycache__/
+*.pyc
+
 # Playwright
 node_modules/
 /test-results/
