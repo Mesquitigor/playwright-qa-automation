@@ -16,7 +16,6 @@ CONTACT_LINE_1 = "João Pessoa, PB, Brazil (Remote, UTC-3)  ·  higormesquita@gm
 # (display text, url) — rendered as clickable links side by side.
 CONTACT_LINKS = [
     ("linkedin.com/in/higor-mesquita", "https://linkedin.com/in/higor-mesquita"),
-    ("github.com/Mesquitigor", "https://github.com/Mesquitigor"),
 ]
 
 SUMMARY = (
