@@ -24,7 +24,7 @@ SUMMARY = (
     "combining two complementary strengths: validating AI and GenAI features for correctness and "
     "consistency, and applying AI-augmented quality engineering with Cursor and Playwright MCP to "
     "accelerate test design, authoring, and failure triage. Built automated test suites from the "
-    "ground up, totaling 2,100+ test cases, automated 20+ end-to-end services, and cut regression "
+    "ground up, totaling 2,000+ test cases, automated 20+ end-to-end services, and cut regression "
     "execution time by 40%. "
     "Works across web, API, mobile, and database layers, contributing to CI/CD pipelines and keeping "
     "suites stable through disciplined locator strategy and Page Object Model architecture."
@@ -34,7 +34,7 @@ SKILLS = [
     (
         "Test Automation",
         "Playwright (TypeScript), Cypress (JavaScript), Robot Framework (Python), Selenium, Appium, "
-        "Vitest, Page Object Model, BDD and Gherkin (Cucumber)",
+        "Page Object Model, BDD and Gherkin (Cucumber)",
     ),
     (
         "AI Product Testing",
