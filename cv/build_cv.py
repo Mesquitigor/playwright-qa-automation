@@ -341,7 +341,7 @@ def build_pdf():
         PDF_PATH, pagesize=A4,
         leftMargin=MARGIN_X * cm, rightMargin=MARGIN_X * cm,
         topMargin=MARGIN_Y * cm, bottomMargin=MARGIN_Y * cm,
-        title=f"{C.DISPLAY_NAME} — Senior QA Engineer / SDET",
+        title=f"{C.DISPLAY_NAME} — QA Engineer / SDET",
         author=C.DISPLAY_NAME,
         subject="Curriculum Vitae",
     )

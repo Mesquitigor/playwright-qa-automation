@@ -9,7 +9,7 @@ NAME = "HIGOR LUIZ ARAÚJO DE MESQUITA"
 # Mixed-case form for the page footer and PDF metadata, where all caps reads as shouting.
 DISPLAY_NAME = "Higor Luiz Araújo de Mesquita"
 
-HEADLINE = "Senior QA Engineer  |  SDET  |  AI-Assisted Test Automation  |  Playwright · TypeScript · Cursor · MCP"
+HEADLINE = "QA Engineer  |  SDET  |  AI-Assisted Test Automation  |  Playwright · TypeScript · Cursor · MCP"
 
 CONTACT_LINE_1 = "João Pessoa, PB, Brazil (Remote, UTC-3)  ·  higormesquita@gmail.com  ·  +55 83 99397-1661"
 
@@ -19,28 +19,28 @@ CONTACT_LINKS = [
 ]
 
 SUMMARY = (
-    "Senior QA Engineer and SDET with 5+ years designing test automation for AI-powered healthcare, "
+    "QA Engineer and SDET with 5+ years designing test automation for AI-powered healthcare, "
     "digital payments, banking, and e-commerce platforms. Specialist in Playwright with TypeScript, "
     "combining two complementary strengths: validating AI and GenAI features for correctness and "
     "consistency, and applying AI-augmented quality engineering with Cursor and Playwright MCP to "
     "accelerate test design, authoring, and failure triage. Built automated test suites from the "
-    "ground up, totaling 1,600+ tests, automated 20+ end-to-end services, and cut regression "
+    "ground up, totaling 2,100+ test cases, automated 20+ end-to-end services, and cut regression "
     "execution time by 40%. "
-    "Acts as QA Tech Lead, setting automation standards, owning CI/CD quality gates, and mentoring "
-    "engineers to deliver automation independently."
+    "Works across web, API, mobile, and database layers, contributing to CI/CD pipelines and keeping "
+    "suites stable through disciplined locator strategy and Page Object Model architecture."
 )
 
 SKILLS = [
     (
         "Test Automation",
         "Playwright (TypeScript), Cypress (JavaScript), Robot Framework (Python), Selenium, Appium, "
-        "Vitest, Page Object Model, fixtures, BDD and Gherkin (Cucumber)",
+        "Vitest, Page Object Model, BDD and Gherkin (Cucumber)",
     ),
     (
         "AI Product Testing",
         "Validation of AI and GenAI features for correctness, safety, and consistency; detection of "
-        "hallucinations, inconsistent outputs, and edge cases; schema and business-rule assertions over "
-        "non-deterministic output; prompt and model regression; golden datasets",
+        "hallucinations, inconsistent outputs, and edge cases; schema and business-rule assertions "
+        "over non-deterministic output",
     ),
     (
         "AI-Augmented QA",
@@ -50,48 +50,48 @@ SKILLS = [
     ),
     (
         "Testing Types",
-        "End-to-end, API, regression, integration, performance and load, mobile, cross-browser, "
-        "accessibility (WCAG), visual regression, exploratory",
+        "End-to-end, API, regression, integration, mobile, cross-browser, accessibility (WCAG), "
+        "visual regression, exploratory, performance and load (k6, JMeter)",
     ),
     (
         "CI/CD and Infrastructure",
-        "GitHub Actions, Jenkins, Docker, Linux, test sharding and parallelization, Allure, trace and "
-        "video artifact analysis",
+        "GitHub Actions, Jenkins, Git, Docker, Linux, AWS (basic), test sharding and parallelization",
     ),
     (
-        "Data and Tools",
-        "SQL, PostgreSQL, DBeaver, REST APIs, Postman, k6, JMeter, Git, Jira, ClickUp, AWS (basic)",
+        "Databases and APIs",
+        "SQL, PostgreSQL, DBeaver, REST APIs, Postman",
     ),
     (
-        "Practices",
-        "Scrum, Kanban, shift-left testing, risk-based testing, test strategy, quality governance, "
-        "technical mentoring",
+        "Reporting and Debugging",
+        "Allure, Playwright trace viewer and video artifacts, flaky test analysis, defect reporting",
+    ),
+    (
+        "Process and Collaboration",
+        "Jira, ClickUp, Scrum, Kanban, shift-left testing, risk-based testing, test strategy",
     ),
 ]
 
 EXPERIENCE = [
     {
-        "company": "SOAP HEALTH",
-        "title": "Senior QA Engineer & QA Tech Lead",
+        "company": "MEDOME",
+        "title": "QA Engineer",
         "dates": "Feb 2025 – Present",
         "context": "Remote (US company)  ·  AI-powered clinical decision support for healthcare providers",
         "bullets": [
-            "Built the automation practice from zero to 400+ Playwright and TypeScript tests covering "
-            "critical clinical journeys, edge cases, and backend authentication flows.",
-            "Own the quality of AI-assisted clinical features, validating non-deterministic model outputs "
-            "through schema and business-rule assertions, plus regression checks on prompt and model changes.",
-            "Lead the QA team as technical mentor, running training on Playwright fundamentals, Git "
-            "workflows, code quality, dependency management, and CI/CD, taking members from zero "
-            "automation experience to independent test delivery.",
-            "Re-architected the legacy suite into Page Object Model with fixtures and a locator strategy "
-            "based on roles and test IDs, reducing flaky failures and CI re-runs.",
-            "Introduced AI-augmented workflows with Cursor and Playwright MCP for test scaffolding, "
-            "refactoring, and CI failure triage, shortening test authoring and debugging cycles.",
-            "Own CI quality gates in GitHub Actions with parallelized runs and Allure reporting, turning "
-            "failure analysis into a repeatable, artifact-driven process.",
-            "Write unit and integration tests in Vitest alongside developers to shift quality left and "
-            "catch defects before end-to-end execution.",
-            "Run a traceable QA process in Jira and ClickUp, from requirement to test case to defect.",
+            "Built the automation suite from zero to 900+ Playwright and TypeScript test cases covering "
+            "critical clinical journeys and edge cases.",
+            "Test AI-assisted clinical features, validating non-deterministic model outputs through "
+            "schema and business-rule assertions.",
+            "Re-architected the legacy suite into Page Object Model with a locator strategy based on "
+            "roles and test IDs, reducing flaky failures and CI re-runs.",
+            "Use Cursor and Playwright MCP for test scaffolding, refactoring, and CI failure triage, "
+            "shortening test authoring and debugging cycles.",
+            "Contribute to CI/CD pipelines in GitHub Actions, using Allure reports to analyze failures "
+            "and improve test reliability.",
+            "Fix existing Vitest unit and integration tests when feature work or refactors break them.",
+            "Validate complex API integrations and backend authentication flows.",
+            "Manage tasks and bugs in Jira and ClickUp, keeping QA work traceable from requirement to "
+            "test case to defect.",
         ],
     },
     {
