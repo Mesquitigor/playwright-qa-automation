@@ -32,42 +32,23 @@ SUMMARY = (
 
 SKILLS = [
     (
-        "Test Automation",
-        "Playwright (TypeScript), Cypress (JavaScript), Robot Framework (Python), Selenium, Appium, "
-        "Page Object Model, BDD and Gherkin (Cucumber)",
+        "Automation",
+        "Playwright, Cypress, Robot Framework, Selenium, Appium, TypeScript, JavaScript, Python, "
+        "Java, Page Object Model, BDD & Gherkin",
     ),
     (
-        "AI Product Testing",
-        "Validation of AI and GenAI features for correctness, safety, and consistency; detection of "
-        "hallucinations, inconsistent outputs, and edge cases; schema and business-rule assertions "
-        "over non-deterministic output",
+        "AI in Testing",
+        "AI/GenAI feature validation, hallucination detection, non-deterministic output assertions, "
+        "Cursor, Cursor Rules, Playwright MCP, prompt engineering, AI-assisted test generation",
     ),
     (
-        "AI-Augmented QA",
-        "Cursor (test authoring, refactoring, and CI failure triage), Cursor Rules, Playwright MCP, "
-        "prompt engineering, AI-assisted test generation from requirements, user stories, and "
-        "acceptance criteria",
+        "Testing & Data",
+        "E2E, API, regression, integration, mobile, cross-browser, accessibility (WCAG), visual "
+        "regression, performance (k6, JMeter), SQL, PostgreSQL, DBeaver, Postman",
     ),
     (
-        "Testing Types",
-        "End-to-end, API, regression, integration, mobile, cross-browser, accessibility (WCAG), "
-        "visual regression, exploratory, performance and load (k6, JMeter)",
-    ),
-    (
-        "CI/CD and Infrastructure",
-        "GitHub Actions, Jenkins, Git, Docker, Linux, AWS (basic), test sharding and parallelization",
-    ),
-    (
-        "Databases and APIs",
-        "SQL, PostgreSQL, DBeaver, REST APIs, Postman",
-    ),
-    (
-        "Reporting and Debugging",
-        "Allure, Playwright trace viewer and video artifacts, flaky test analysis, defect reporting",
-    ),
-    (
-        "Process and Collaboration",
-        "Jira, ClickUp, Scrum, Kanban, shift-left testing, risk-based testing, test strategy",
+        "CI/CD & Tools",
+        "GitHub Actions, Jenkins, Git, Docker, Linux, AWS (basic), Allure, Jira, ClickUp, Scrum, Kanban",
     ),
 ]
 
