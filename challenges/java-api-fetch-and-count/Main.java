@@ -1,46 +1,18 @@
-import java.util.*;
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.*;
 import com.google.gson.*;
 
 class Main {
-
-  private static final String POSTS_URL =
-      "https://coderbyte.com/api/challenges/json/all-posts";
-
-  /**
-   * GET the posts list from Coderbyte and return how many posts it contains.
-   */
-  public static int fetchAndCountPosts() {
+  public static int fetchAndCountPosts() throws Exception {
     System.setProperty("http.agent", "Chrome");
-
-    try {
-      URL url = new URL(POSTS_URL);
-      HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-      connection.setRequestMethod("GET");
-      connection.setRequestProperty("User-Agent", "Chrome");
-
-      BufferedReader reader = new BufferedReader(
-          new InputStreamReader(connection.getInputStream()));
-      StringBuilder response = new StringBuilder();
-      String line;
-      while ((line = reader.readLine()) != null) {
-        response.append(line);
-      }
-      reader.close();
-      connection.disconnect();
-
-      JsonArray posts = new Gson().fromJson(response.toString(), JsonArray.class);
-      return posts.size();
-    } catch (Exception e) {
-      e.printStackTrace();
-      return 0;
-    }
+    Reader in = new InputStreamReader(
+        new URL("https://coderbyte.com/api/challenges/json/all-posts").openStream());
+    int count = new Gson().fromJson(in, JsonArray.class).size();
+    in.close();
+    return count;
   }
 
-  public static void main(String[] args) {
-    int numberOfPosts = fetchAndCountPosts();
-    System.out.println("Number of posts: " + numberOfPosts);
+  public static void main(String[] args) throws Exception {
+    System.out.println("Number of posts: " + fetchAndCountPosts());
   }
 }
